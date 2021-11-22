@@ -69,3 +69,22 @@ blueButton.addEventListener('click', (event) => {
 });
 
 //--------------------9-----------------------//
+const logo = document.querySelector("body > header > div.navbar.navbar-dark.bg-dark.box-shadow > div");
+const body = document.querySelector("body");
+
+logo.addEventListener('keypress', (e) => {
+	switch(e.code) {
+		case "KeyA":
+			body.classList = "col-4";
+			break;
+		case "KeyY":
+			body.classList = "col-4 offset-md-4";
+			break;
+		case "KeyP":
+			body.classList = "col-4 offset-md-8";
+			break;
+		case "KeyB":
+			body.classList = "";
+			break;
+	};
+});
